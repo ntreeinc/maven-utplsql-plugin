@@ -2,11 +2,11 @@
    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
    <modelVersion>4.0.0</modelVersion>
    
-   <groupId>com.theserverlabs.maven.utplsql</groupId>
+   <groupId>com.ntree.utplsql</groupId>
    <artifactId>maven-utplsql-plugin</artifactId>
    <packaging>maven-plugin</packaging>
    <version>1.31</version>
-   <name>maven-utplsql-plugin Maven Mojo</name>
+   <name>maven-utplsql-plugin Maven Mojo - ntree fork</name>
    
    <dependencies>
       <dependency>
@@ -31,4 +31,16 @@
          <version>2.4</version>
       </dependency>
    </dependencies>
+   <distributionManagement>
+    <repository>
+      <id>ntree-releases</id>
+      <name>Ntree releases</name>
+      <url>http://mgr200.ntree.com:8081/content/repositories/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>ntree-snapshots</id>
+      <name>Ntree snapshots</name>
+      <url>http://mgr200.ntree.com:8081/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
